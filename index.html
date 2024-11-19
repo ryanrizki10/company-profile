@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snappy Print</title>
+    <style>
+        :root {
+            --peach: #ffdab9;
+            --dark: #2f4f4f;
+            --cyan: #e0ffff;
+            --brown: #3e2723;
+            --green: #25d366;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #nav-container {
+            background-color: var(--cyan);
+            position: sticky;
+            top: 0;
+        }
+
+        .nav-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            height: 60px;
+        }
+
+        .nav-flex label,#hamburger{
+            display: none;
+        }
+
+        .nav-flex nav ul{
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a{
+            display: block;
+            color: var(--dark);
+            padding: 0 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 60px;
+        }
+
+        nav ul li a:hover{
+            background-color: var(--peach);
+            transition: all 0.3s;
+        }
+
+        .nav-brand h2{
+            margin: 14px 0 0 10px;
+            color: var(--dark);
+        }
+
+        /* Versi Tablet */
+        @media screen and (max-width: 768px){
+            /* Tampilkan Icon Hamburger */
+            #nav-container .nav-flex label{
+                display: inline-block;
+                color: var(--dark);
+                font-style: normal;
+                font-size: 32px;
+                padding: 8px;
+            }
+            /* susun ulang menu menjadi vertical */
+            #nav-container .nav-flex{
+                width: 100%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+            }
+
+            nav ul li a {
+                display: block;
+                color: var(--dark);
+                background-color: var(--cyan);
+                padding: 0 30px;
+                height: auto;
+            }
+
+            /* Pindahkan posisi brand kekanan dan perkecil */
+
+            .nav-brand h2{
+                position: absolute;
+                right: 20px;
+            }
+
+            /* Untuk menampilkan / menyembunyikan menu */
+            #nav-container nav{
+                display: none;
+            }
+
+            /* menampilkan menu ketika teks garis tiga di klik */
+            #nav-container .nav-flex input:checked ~ nav{
+                display: flex;
+            }
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Navigasi Start -->
+    <div id="nav-container">
+        <div class="nav-flex">
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger">
+            <div class="nav-brand">
+                <h2>Snappy Print</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Navigasi End -->
+
+</body>
+
+</html>

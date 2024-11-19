@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #243447;
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            align-items: center;
+        }
+
+        .tweet-card {
+            background-color: #15202b;
+            border-radius: 10px;
+            display: flex;
+            position: relative;
+            padding: 20px;
+            width: 400px;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .username {
+            margin: 0;
+            color: #8899a6;
+            font-size: 14px;
+        }
+
+        .tweet-text {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .hashtags {
+            color: #1da1f2;
+        }
+
+        .tweet-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #8899a6;
+        }
+
+
+        .likes span {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        .twitter-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            color: #1da1f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tweet-card">
+        <div class="profile">
+            <img src="image/people4.jpg" alt="" class="profile-pic">
+        </div>
+        <p class="name">John Doe</p>
+        <p class="username">@realjohndoe</p>
+        <p class="tweet-text">
+            Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'? <span
+                class="hastags">#programming #coding #debugging</span>
+        </p>
+        <div class="tweet-footer">
+            <div class="likes">
+                <span>❤️</span> 650
+            </div>
+            <P class="time">3:40 PM – Feb 24, 2022</P>
+        </div>
+        <div class="twitter-logo">
+            <i class="fab fa-twitter"></i>
+        </div>
+    </div>
+</body>
+
+</html>

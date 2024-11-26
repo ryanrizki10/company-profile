@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome/css/all.min.css">
     <title>Snappy Print</title>
     <style>
         :root {
@@ -69,6 +70,75 @@
             color: var(--dark);
         }
 
+        #hero-container{
+            background-image: url(/image/hero_image.png);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            background-attachment: fixed;
+            
+        }
+
+        .text{
+            text-align: center;
+            color: var(--cyan);
+            font-size: 20px;
+        }
+
+        .button{
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #25d366;
+            padding: 10px;
+            color: var(--cyan);
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .button:hover{
+            background-color: var(--dark);
+            
+        }
+
+        main{
+            width: 80%;
+            margin: auto;
+        }
+        /* About */
+        #about h1{
+            color: var(--dark);
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        #about .about-deskripsi{
+            text-align: center;
+            color: var(--dark);
+        }
+
+        #about .about-flex{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin: 30px auto;
+        }
+
+        .about-image, .about-text{
+            width: 50%;
+            margin: 14px;
+        }
+
+        .about-image img{
+            width: 100%;
+            object-fit: cover;
+        }
+
+
+
         /* Versi Tablet */
         @media screen and (max-width: 768px){
             /* Tampilkan Icon Hamburger */
@@ -117,6 +187,15 @@
                 display: flex;
             }
 
+            /* About */
+            .about-flex{
+                flex-direction: column;
+            }
+
+            .about-image, .about-text{
+                width: auto;
+            }
+
         }
 
 
@@ -145,9 +224,47 @@
             </nav>
         </div>
     </div>
-
-
     <!-- Navigasi End -->
+
+    <!-- Hero Image -->
+
+    <div id="hero-container">
+        <div class="text">
+            <h1>INVITTATION ART PRINTING</h1>
+            <p>Cetak Undangan Pernikahan yang Elegan</p>
+            <a href="#" class="button"><i class="fab fa-whatsapp"></i> | Hubungi Kami</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- About -->
+         <section id="about">
+            <h1>About</h1>
+            <p class="about-deskripsi">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis, soluta!</p>
+            <div class="about-flex">
+                <div class="about-image">
+                    <img src="/image/about_1.png" alt="gambar about">
+                </div>
+                <div class="about-text">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laudantium facilis at deserunt, tempora inventore autem ea illum ut minima, laborum sunt neque. Ipsum quas autem quasi corporis ea aperiam.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias quaerat earum, deleniti perferendis quae dolorem quo maxime sed distinctio sequi odio error voluptate possimus in inventore, excepturi perspiciatis consectetur.</p>
+                </div>
+            </div>
+            <div class="about-flex">
+                <div class="about-text">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem doloremque et repudiandae, incidunt recusandae ex quaerat reiciendis maiores vero? Voluptates dolor harum animi, sequi quod doloremque ea quae dignissimos quidem!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus cum beatae, tempora laudantium maiores itaque animi quasi recusandae eius quas architecto impedit! Iure, velit praesentium alias quod doloribus tenetur molestiae!</p>
+                </div>
+                <div class="about-image">
+                    <img src="/image/about_2.png" alt="">
+                </div>
+            </div>
+         </section>
+    </main>
+
+
 
 </body>
 

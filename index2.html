@@ -3,108 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tweet Card</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Hero</title>
   <style>
-    body {
-  font-family: Arial, sans-serif;
-  background-color: #1e2732;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.tweet-card {
-  background-color: #15202b;
-  border-radius: 10px;
-  padding: 20px;
-  width: 400px;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.profile-pic {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.name {
-  font-weight: bold;
-  margin: 0;
-}
-
-.username {
-  margin: 0;
-  color: #8899a6;
-  font-size: 14px;
-}
-
-.tweet-text {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 15px;
-}
-
-.hashtags {
-  color: #1da1f2;
-}
-
-.tweet-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  color: #8899a6;
-}
-
-.likes span {
-  font-size: 16px;
-  margin-right: 5px;
-}
-
-.twitter-logo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  color: #1da1f2;
-}
-
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
 
   </style>
 </head>
 <body>
-  <div class="tweet-card">
-    <div class="profile">
-      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-      <div>
-        <p class="name">John Doe</p>
-        <p class="username">@realjohndoe</p>
-      </div>
-    </div>
-    <p class="tweet-text">
-      Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'? 
-      <span class="hashtags">#programming #coding #debugging</span>
-    </p>
-    <div class="tweet-footer">
-      <div class="likes">
-        <span>❤️</span> 650
-      </div>
-      <p class="time">3:40 PM – Feb 24, 2022</p>
-    </div>
-    <div class="twitter-logo">
-      <span>🐦</span>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h1 class="logo">mbe-dev</h1>
+    </nav>
+  </header>
+  <div class="container">
+    <img src="/image/people4.jpg" alt="">
+    <div class="hero-text">
+      <h1>Your perfect Coffee Experience</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda nisi id excepturi quisquam, voluptatum facilis. Repudiandae dolorem, quisquam, cum dicta laborum assumenda quos id, ducimus odio necessitatibus deleniti cumque!</p>
+      <button>Order Now</button>
     </div>
   </div>
+
+
+
+
 </body>
 </html>

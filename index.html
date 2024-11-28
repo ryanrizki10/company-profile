@@ -108,6 +108,7 @@
             width: 80%;
             margin: auto;
         }
+
         /* About */
         #about h1{
             color: var(--dark);
@@ -137,6 +138,42 @@
             object-fit: cover;
         }
 
+        /* SERVICES */
+
+        #services h1{
+            color: var(--dark);
+            text-align: center;
+            margin-top: 80px;
+
+        }
+
+        #services .services-deskripsi {
+            text-align: center;
+            color: var(--dark);
+
+        }
+
+        #services .services-flex{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px auto;
+            
+        }
+
+        .services-items{
+            width: 25%;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .services-items .fas{
+            color: var(--peach);
+        }
+
+
+        
 
 
         /* Versi Tablet */
@@ -196,7 +233,22 @@
                 width: auto;
             }
 
+            /* SERVICES Our Feature */
+
+            .services-items{
+                width: 50%;
+            }
+
         }
+
+        /* Smartphone */
+        @media screen and (max-width: 481px){
+            /* Services */
+            .services-items{
+                width: 100%;
+            }
+        }
+
 
 
 
@@ -262,6 +314,36 @@
                 </div>
             </div>
          </section>
+
+         <!-- Services -->
+         <section id="services">
+            <h1>OUR FEATURE & SERVICES</h1>
+            <p class="services-deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, temporibus?</p>
+            <div class="services-flex">
+                <div class="services-items">
+                    <i class="fas fa-star fa-3x"></i>
+                    <h3>QUALITY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sequi!</p>
+                </div>
+                <div class="services-items">
+                    <i class="fas fa-pen fa-3x"></i>
+                    <h3>DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sequi!</p>
+                </div>
+                <div class="services-items">
+                    <i class="fas fa-lightbulb fa-3x"></i>
+                    <h3>CREATIVITY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sequi!</p>
+                </div>
+                <div class="services-items">
+                    <i class="fas fa-inbox fa-3x"></i>
+                    <h3>COMMUNICATION</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sequi!</p>
+                </div>
+            </div>
+         </section>
+
+         <!-- Catalog -->
     </main>
 
 

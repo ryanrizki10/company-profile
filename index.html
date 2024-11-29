@@ -180,6 +180,11 @@
 
         }
 
+        #catalog p{
+            text-align: center;
+            color: var(--dark);
+        }
+
         #catalog .catalog-deskripsi{
             text-align: center;
             color: var(--dark);
@@ -213,8 +218,41 @@
         }
 
         .catalog-items p{
-            font-size: 14px;color: var(--dark);
+            font-size: 14px;
+            color: var(--dark);
         }
+
+        .price-chat-container{
+            border-bottom: 2px solid var(--peach);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 50px;
+            padding: 5px;
+        }
+
+        .price-harga span{
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--dark);
+        }
+
+        .chat-button button {
+            background-color: var(--green);
+            color: var(--cyan);
+            border: none;
+            padding: 5px;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .chat-button button:hover{
+            background-color: var(--dark);
+        }
+
+
 
         
 
@@ -277,8 +315,12 @@
             }
 
             /* SERVICES Our Feature */
-
             .services-items{
+                width: 50%;
+            }
+
+            /* CATALOG */
+            .catalog-items{
                 width: 50%;
             }
 
@@ -288,6 +330,11 @@
         @media screen and (max-width: 481px){
             /* Services */
             .services-items{
+                width: 100%;
+            }
+
+            /* Catalog */
+            .catalog-items{
                 width: 100%;
             }
         }

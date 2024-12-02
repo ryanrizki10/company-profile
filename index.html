@@ -139,7 +139,6 @@
         }
 
         /* SERVICES */
-
         #services h1{
             color: var(--dark);
             text-align: center;
@@ -252,12 +251,47 @@
             background-color: var(--dark);
         }
 
+        /* Portofolio */
+        #portofolio h1{
+            color: var(--dark);
+            text-align: center;
+            margin-top: 80px;
+        }
 
+        #portofolio .portofolio-deskripsi{
+            text-align: center;
+            color: var(--dark);
+
+            
+        }
+
+        .portofolio-flex{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            margin: 30px auto;
+
+        }
+
+        .portofolio-items{
+            width: 25%;
+            padding: 5px;
+
+        }
+
+        .portofolio-items img{
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
 
         
 
 
-        /* Versi Tablet */
+
+
+        /* ===Versi Tablet=== */
         @media screen and (max-width: 768px){
             /* Tampilkan Icon Hamburger */
             #nav-container .nav-flex label{
@@ -324,9 +358,16 @@
                 width: 50%;
             }
 
+            /* Portofolio */
+            .portofolio-items{
+                width: 30%;
+                padding: 5px;
+
         }
 
-        /* Smartphone */
+        }
+
+        /* ===Smartphone=== */
         @media screen and (max-width: 481px){
             /* Services */
             .services-items{
@@ -337,6 +378,13 @@
             .catalog-items{
                 width: 100%;
             }
+
+            /* Portofolio */
+            .portofolio-items{
+                width: 50%;
+                padding: 5px;
+
+        }
         }
 
 
@@ -560,6 +608,38 @@
                 </div>
             </div>
          </section>
+
+         <!-- Portofolio -->
+          <section id="portofolio">
+            <h1>PORTOFOLIO</h1>
+            <p class="portofolio-deskripsi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, error.</p>
+            <div class="portofolio-flex">
+                <div class="portofolio-items">
+                    <img src="image/catalog_1.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_2.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_3.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_4.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_5.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_6.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_7.jpeg" alt="">
+                </div>
+                <div class="portofolio-items">
+                    <img src="image/catalog_8.jpeg" alt="">
+                </div>
+            </div>
+          </section>
 
     </main>
 
